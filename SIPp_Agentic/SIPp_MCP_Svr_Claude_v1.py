@@ -7,7 +7,6 @@ from datetime import datetime
 from fastmcp import FastMCP
 from dotenv import load_dotenv
 
-# sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from SBC_Tools import enable_debug as cube_enable_debug
 from SBC_Tools import disable_and_pull_logs as cube_disable_and_pull_logs
 
@@ -30,8 +29,6 @@ mcp = FastMCP("sipp_mcp_server_v1")
 
 
 # ******* Helper Functions *******
-
-
 def _extract_call_id(msg_log_path: str) -> str:
     """Extract Call-ID value from SIPp message log."""
     if not os.path.exists(msg_log_path):
@@ -85,8 +82,6 @@ def _filter_log_by_call_id(raw_log: str, call_id: str, context: int = 5) -> str:
 
 
 # ******* TOOLS *******
-
-
 @mcp.tool()
 def enable_debug(cube_ip: str) -> str:
     """
