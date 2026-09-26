@@ -37,7 +37,7 @@ SIPp_Agentic/
 
 ### System
 - Python 3.10+
-- SIPp installed — built from source recommended:
+- SIPp installed - built from source recommended:
   ```bash
   sudo apt-get install autoconf libncurses5-dev libpcap-dev libssl-dev g++
   git clone https://github.com/SIPp/sipp.git
