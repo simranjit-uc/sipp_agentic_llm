@@ -29,7 +29,6 @@ SIPp_Agentic/
  -- SIPp_MCP_Svr_Claude_v1.py    # MCP server - Claude
  -- basic_call.xml               # SIPp scenario file (basic call, no audio)
  -- test_logs/                   # Auto-created - raw and filtered log output
- -- README.md
 ```
 
 ---
