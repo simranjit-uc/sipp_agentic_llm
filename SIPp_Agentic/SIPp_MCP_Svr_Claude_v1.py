@@ -5,14 +5,12 @@ import logging
 import subprocess
 from datetime import datetime
 from fastmcp import FastMCP
-from dotenv import load_dotenv
 
 from SBC_Tools import enable_debug as cube_enable_debug
 from SBC_Tools import disable_and_pull_logs as cube_disable_and_pull_logs
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 LOG_DIR = os.path.join(BASE_DIR, "test_logs")
