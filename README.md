@@ -55,23 +55,7 @@ pip install fastmcp netmiko mcp
 
 ## Configuration
 
-### 1. Update `SBC_Tools.py`
-
-Replace the placeholder credentials with your actual CUBE details. For production use, move these to environment variables:
-
-```python
-import os
-
-CUBE_CONFIG = {
-    "device_type": "cisco_ios",
-    "host":        os.environ.get("CUBE_HOST"),
-    "username":    os.environ.get("CUBE_USER"),
-    "password":    os.environ.get("CUBE_PASS"),
-    "timeout":     30,
-}
-```
-
-### 2. Update `SIPp_MCP_Svr_Claude_v1.py`
+### 1. Update `SIPp_MCP_Svr_Claude_v1.py`
 
 Update these values at the top of the file to match your environment. Run command "which sipp" to find the exact path to sipp:
 
