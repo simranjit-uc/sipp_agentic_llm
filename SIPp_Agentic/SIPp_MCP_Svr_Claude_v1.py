@@ -17,7 +17,7 @@ LOG_DIR = os.path.join(BASE_DIR, "test_logs")
 SCENARIO_FILE = os.path.join(BASE_DIR, "basic_call.xml")
 
 SIPP_PATH = "/usr/bin/sipp"  # SIPp Path
-SIPP_LOCAL_IP = "10.16.127.66"  # Your SIPp machine IP
+SIPP_LOCAL_IP = "X.X.X.X"  # Your SIPp machine IP
 
 os.makedirs(LOG_DIR, exist_ok=True)
 
